@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.LinkModel = exports.ContentModel = exports.UserModel = void 0;
 const mongoose_1 = __importDefault(require("mongoose"));
 const mongoose_2 = require("mongoose");
-mongoose_1.default.connect("mongodb+srv://vipulkumar05012002:8840147039%40vV@cluster0.pcow8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+
 const UserSchema = new mongoose_2.Schema({
     email: { type: String, unique: true },
     password: { type: String, require: true }
